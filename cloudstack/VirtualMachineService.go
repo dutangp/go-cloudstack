@@ -1336,6 +1336,7 @@ func (s *VirtualMachineService) NewDestroyVirtualMachineParams(id string) *Destr
 	p := &DestroyVirtualMachineParams{}
 	p.p = make(map[string]interface{})
 	p.p["id"] = id
+	p.p["retaindns"] = false
 	return p
 }
 
