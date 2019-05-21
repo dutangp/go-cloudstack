@@ -1153,7 +1153,6 @@ func (s *VirtualMachineService) NewDeployVirtualMachineParams(serviceofferingid 
 // Creates and automatically starts a virtual machine based on a service offering, disk offering, and template.
 func (s *VirtualMachineService) DeployVirtualMachine(p *DeployVirtualMachineParams) (*DeployVirtualMachineResponse, error) {
 	resp, err := s.cs.newRequest("deployVirtualMachine", p.toURLValues())
-	//resp, err := s.cs.newRequest("tmProvisionVirtualMachine", p.toURLValues())
 	if err != nil {
 		return nil, err
 	}
