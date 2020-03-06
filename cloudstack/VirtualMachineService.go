@@ -394,7 +394,7 @@ type AssignVirtualMachineResponse struct {
 	Networkkbsread        int64                                       `json:"networkkbsread"`
 	Networkkbswrite       int64                                       `json:"networkkbswrite"`
 	Nic                   []Nic                                       `json:"nic"`
-	Ostypeid              int64                                       `json:"ostypeid"`
+	Ostypeid              string                                      `json:"ostypeid"`
 	Password              string                                      `json:"password"`
 	Passwordenabled       bool                                        `json:"passwordenabled"`
 	Project               string                                      `json:"project"`
@@ -575,7 +575,7 @@ type ChangeServiceForVirtualMachineResponse struct {
 	Networkkbsread        int64                                                 `json:"networkkbsread"`
 	Networkkbswrite       int64                                                 `json:"networkkbswrite"`
 	Nic                   []Nic                                                 `json:"nic"`
-	Ostypeid              int64                                                 `json:"ostypeid"`
+	Ostypeid              string                                                `json:"ostypeid"`
 	Password              string                                                `json:"password"`
 	Passwordenabled       bool                                                  `json:"passwordenabled"`
 	Project               string                                                `json:"project"`
@@ -1417,7 +1417,7 @@ type DestroyVirtualMachineResponse struct {
 	Networkkbsread        int64                                        `json:"networkkbsread"`
 	Networkkbswrite       int64                                        `json:"networkkbswrite"`
 	Nic                   []Nic                                        `json:"nic"`
-	Ostypeid              int64                                        `json:"ostypeid"`
+	Ostypeid              string                                        `json:"ostypeid"`
 	Password              string                                       `json:"password"`
 	Passwordenabled       bool                                         `json:"passwordenabled"`
 	Project               string                                       `json:"project"`
@@ -2109,7 +2109,7 @@ type VirtualMachine struct {
 	Networkkbsread        int64                         `json:"networkkbsread"`
 	Networkkbswrite       int64                         `json:"networkkbswrite"`
 	Nic                   []Nic                         `json:"nic"`
-	Ostypeid              int64                         `json:"ostypeid"`
+	Ostypeid              string                        `json:"ostypeid"`
 	Password              string                        `json:"password"`
 	Passwordenabled       bool                          `json:"passwordenabled"`
 	Project               string                        `json:"project"`
@@ -2306,7 +2306,7 @@ type MigrateVirtualMachineResponse struct {
 	Networkkbsread        int64                                        `json:"networkkbsread"`
 	Networkkbswrite       int64                                        `json:"networkkbswrite"`
 	Nic                   []Nic                                        `json:"nic"`
-	Ostypeid              int64                                        `json:"ostypeid"`
+	Ostypeid              string                                       `json:"ostypeid"`
 	Password              string                                       `json:"password"`
 	Passwordenabled       bool                                         `json:"passwordenabled"`
 	Project               string                                       `json:"project"`
@@ -2509,7 +2509,7 @@ type MigrateVirtualMachineWithVolumeResponse struct {
 	Networkkbsread        int64                                                  `json:"networkkbsread"`
 	Networkkbswrite       int64                                                  `json:"networkkbswrite"`
 	Nic                   []Nic                                                  `json:"nic"`
-	Ostypeid              int64                                                  `json:"ostypeid"`
+	Ostypeid              string                                                 `json:"ostypeid"`
 	Password              string                                                 `json:"password"`
 	Passwordenabled       bool                                                   `json:"passwordenabled"`
 	Project               string                                                 `json:"project"`
@@ -2684,7 +2684,7 @@ type RebootVirtualMachineResponse struct {
 	Networkkbsread        int64                                       `json:"networkkbsread"`
 	Networkkbswrite       int64                                       `json:"networkkbswrite"`
 	Nic                   []Nic                                       `json:"nic"`
-	Ostypeid              int64                                       `json:"ostypeid"`
+	Ostypeid              string                                      `json:"ostypeid"`
 	Password              string                                      `json:"password"`
 	Passwordenabled       bool                                        `json:"passwordenabled"`
 	Project               string                                      `json:"project"`
@@ -2838,7 +2838,7 @@ type RecoverVirtualMachineResponse struct {
 	Networkkbsread        int64                                        `json:"networkkbsread"`
 	Networkkbswrite       int64                                        `json:"networkkbswrite"`
 	Nic                   []Nic                                        `json:"nic"`
-	Ostypeid              int64                                        `json:"ostypeid"`
+	Ostypeid              string                                       `json:"ostypeid"`
 	Password              string                                       `json:"password"`
 	Passwordenabled       bool                                         `json:"passwordenabled"`
 	Project               string                                       `json:"project"`
@@ -3025,7 +3025,7 @@ type RemoveNicFromVirtualMachineResponse struct {
 	Networkkbsread        int64                                              `json:"networkkbsread"`
 	Networkkbswrite       int64                                              `json:"networkkbswrite"`
 	Nic                   []Nic                                              `json:"nic"`
-	Ostypeid              int64                                              `json:"ostypeid"`
+	Ostypeid              string                                             `json:"ostypeid"`
 	Password              string                                             `json:"password"`
 	Passwordenabled       bool                                               `json:"passwordenabled"`
 	Project               string                                             `json:"project"`
@@ -3200,7 +3200,7 @@ type ResetPasswordForVirtualMachineResponse struct {
 	Networkkbsread        int64                                                 `json:"networkkbsread"`
 	Networkkbswrite       int64                                                 `json:"networkkbswrite"`
 	Nic                   []Nic                                                 `json:"nic"`
-	Ostypeid              int64                                                 `json:"ostypeid"`
+	Ostypeid              string                                                `json:"ostypeid"`
 	Password              string                                                `json:"password"`
 	Passwordenabled       bool                                                  `json:"passwordenabled"`
 	Project               string                                                `json:"project"`
@@ -3386,7 +3386,7 @@ type RestoreVirtualMachineResponse struct {
 	Networkkbsread        int64                                        `json:"networkkbsread"`
 	Networkkbswrite       int64                                        `json:"networkkbswrite"`
 	Nic                   []Nic                                        `json:"nic"`
-	Ostypeid              int64                                        `json:"ostypeid"`
+	Ostypeid              string                                       `json:"ostypeid"`
 	Password              string                                       `json:"password"`
 	Passwordenabled       bool                                         `json:"passwordenabled"`
 	Project               string                                       `json:"project"`
@@ -3678,7 +3678,7 @@ type StartVirtualMachineResponse struct {
 	Networkkbsread        int64                                      `json:"networkkbsread"`
 	Networkkbswrite       int64                                      `json:"networkkbswrite"`
 	Nic                   []Nic                                      `json:"nic"`
-	Ostypeid              int64                                      `json:"ostypeid"`
+	Ostypeid              string                                     `json:"ostypeid"`
 	Password              string                                     `json:"password"`
 	Passwordenabled       bool                                       `json:"passwordenabled"`
 	Project               string                                     `json:"project"`
@@ -3865,7 +3865,7 @@ type StopVirtualMachineResponse struct {
 	Networkkbsread        int64                                     `json:"networkkbsread"`
 	Networkkbswrite       int64                                     `json:"networkkbswrite"`
 	Nic                   []Nic                                     `json:"nic"`
-	Ostypeid              int64                                     `json:"ostypeid"`
+	Ostypeid              string                                    `json:"ostypeid"`
 	Password              string                                    `json:"password"`
 	Passwordenabled       bool                                      `json:"passwordenabled"`
 	Project               string                                    `json:"project"`
@@ -4052,7 +4052,7 @@ type UpdateDefaultNicForVirtualMachineResponse struct {
 	Networkkbsread        int64                                                    `json:"networkkbsread"`
 	Networkkbswrite       int64                                                    `json:"networkkbswrite"`
 	Nic                   []Nic                                                    `json:"nic"`
-	Ostypeid              int64                                                    `json:"ostypeid"`
+	Ostypeid              string                                                   `json:"ostypeid"`
 	Password              string                                                   `json:"password"`
 	Passwordenabled       bool                                                     `json:"passwordenabled"`
 	Project               string                                                   `json:"project"`
@@ -4386,7 +4386,7 @@ type UpdateVirtualMachineResponse struct {
 	Networkkbsread        int64                                       `json:"networkkbsread"`
 	Networkkbswrite       int64                                       `json:"networkkbswrite"`
 	Nic                   []Nic                                       `json:"nic"`
-	Ostypeid              int64                                       `json:"ostypeid"`
+	Ostypeid              string                                       `json:"ostypeid"`
 	Password              string                                      `json:"password"`
 	Passwordenabled       bool                                        `json:"passwordenabled"`
 	Project               string                                      `json:"project"`
